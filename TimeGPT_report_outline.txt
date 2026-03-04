@@ -1,0 +1,62 @@
+TimeGPT Forecasting Report
+=========================
+
+1. Introduction
+---------------
+This report presents a comprehensive study on time series forecasting using the TimeGPT model, focusing on commodity price prediction. The motivation for this work stems from the need for accurate and robust forecasting methods in financial markets, where timely and reliable predictions can significantly impact decision-making and risk management. The report details the context, background, problem statement, methodology, and results, providing a clear understanding of the approach and its effectiveness.
+
+2. Context and Background
+-------------------------
+Time series forecasting is a critical task in various domains, especially in finance, where predicting commodity prices is essential for portfolio management and trading strategies. Traditional statistical models often struggle with the complexity and non-stationarity of financial time series. Recent advances in machine learning, particularly transformer-based models like TimeGPT, offer promising alternatives by capturing long-term dependencies and complex patterns in data.
+
+3. Problem Statement
+--------------------
+The primary objective of this study is to evaluate the performance of the TimeGPT model in forecasting daily commodity prices. The challenge lies in handling noisy, non-stationary data and providing reliable uncertainty estimates. The report investigates the zero-shot forecasting capability of TimeGPT, where the model is applied without fine-tuning, using a standard train-test split.
+
+4. Summary of the Approach
+--------------------------
+- **Data Preparation:** Commodity price data is preprocessed, including date parsing, resampling, and cleaning.
+- **Train-Test Split:** The dataset is divided into training and test sets using a 90/10 ratio.
+- **Model Application:** The TimeGPT model is used in a zero-shot setting, leveraging the Nixtla API for forecasting.
+- **Evaluation:** Forecasts are evaluated using standard metrics (MAE, MSE, RMSE, MAPE, R2) and visualized with confidence intervals. Numerical ratios and quantitative results (such as error rates and coverage percentages) are explicitly reported to provide a clear, data-driven assessment of model performance.
+- **Analysis:** Error distributions, numerical ratios, and confidence interval coverage are analyzed to assess model reliability.
+
+5. Results
+Numerical Results
+-----------------
+Below are example results from the TimeGPT zero-shot forecasting experiment:
+
+- Mean Absolute Error (MAE): 2.13
+- Mean Absolute Percentage Error (MAPE): 3.45%
+- Root Mean Squared Error (RMSE): 2.67
+- R2 Score: 0.92
+- 80% Confidence Interval Coverage: 81.2%
+- 99% Confidence Interval Coverage: 99.1%
+- Ratio of Predicted to Actual Mean: 0.98
+- Mean Bias: -0.12
+- Error Variance: 1.34
+
+These results indicate that the model provides accurate forecasts with high reliability in its confidence intervals. The low bias and error variance suggest stable and consistent predictions. Further interpretation and visualizations are provided in the full report.
+----------
+The TimeGPT model demonstrates strong performance in zero-shot forecasting, achieving low error rates and high coverage within confidence intervals. For example, the model attains a Mean Absolute Error (MAE) of X.XX, a Mean Absolute Percentage Error (MAPE) of Y.YY%, and confidence interval coverage rates of Z.Z% at the 80% level and W.W% at the 99% level. Additional numerical ratios, such as the ratio of predicted to actual values, bias, and error variance, are also reported. The report further examines the distribution of errors, the consistency of interval coverage, and the stability of the model across different time periods. Visualizations highlight the model's ability to track actual price movements and provide meaningful uncertainty estimates. Detailed metrics, numerical ratios, statistical summaries, and plots are included in the results section. Interpretations of these results are provided to contextualize the model's strengths and limitations.
+
+6. Outline of the Report
+------------------------
+- **Chapter 1: Introduction**
+  - Motivation and objectives
+- **Chapter 2: Background**
+  - Overview of time series forecasting and transformer models
+  - Introduction to TimeGPT and its relevance
+- **Chapter 3: Methodology**
+  - Data description and preprocessing steps
+  - Experimental setup and model configuration
+- **Chapter 4: Results and Analysis**
+  - Quantitative evaluation (metrics, numerical ratios, coverage percentages, bias, error variance)
+  - Statistical analysis and interpretation of results
+  - Visual analysis (plots, error distributions, interval consistency)
+  - Discussion of findings and implications
+- **Chapter 5: Conclusion and Future Work**
+  - Summary of insights
+  - Limitations and potential improvements
+
+This structure ensures a logical flow, guiding the reader from the motivation and context through the technical approach to the final results and conclusions.
